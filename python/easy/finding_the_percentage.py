@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+from typing import List
+
+
+def finding_the_percentage(n: int, arr: List[str], query_name: str) -> str:
+    """
+    >>> finding_the_percentage(2, ['Harsh 25 26.5 28', 'Anurag 26 28 30'],
+    ... 'Harsh')
+    '26.50'
+    """
+    student_marks = {}
+    for i in range(n):
+        name, *line = arr[i].split()
+        scores = list(map(float, line))
+        student_marks[name] = sum(scores)/len(scores)
+    return '{:.2f}'.format(student_marks[query_name])
+
+
+if __name__ == '__main__':
+    import sys
+    n, *arr, query_name = map(str.strip, sys.stdin.readlines())
+    print(finding_the_percentage(int(n), arr, query_name))
