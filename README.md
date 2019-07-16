@@ -5,9 +5,9 @@
 
 - **Python** 
     - *Easy* - 90/90 - 100%
-    - *Medium* - 0/22 - 0%
+    - *Medium* - 2/22 - 9%
     - *Hard* - 0/3 - 0%
-    - *Total* - 90/115 - 78%
+    - *Total* - 92/115 - 80%
 
 - **Algorithms** 
     - *Easy* - 5/119 - 4%
