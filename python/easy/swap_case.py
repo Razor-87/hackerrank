@@ -11,5 +11,4 @@ def swap_case(string: str) -> str:
 
 if __name__ == '__main__':
     string = input()
-    result = swap_case(string)
-    print(result)
+    print(swap_case(string))

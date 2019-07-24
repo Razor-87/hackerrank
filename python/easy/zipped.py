@@ -14,7 +14,7 @@ def zipped(arr: Tuple[Tuple[float, ...], ...]) -> Tuple[float, ...]:
 
 if __name__ == '__main__':
     import sys
-    arr = tuple(
-        tuple(map(float, lst))
-        for lst in map(str.split, map(str.strip, sys.stdin.readlines()[1:])))
+    arr = tuple(tuple(map(float, lst))
+                for lst in map(str.split, map(str.strip,
+                                              sys.stdin.readlines()[1:])))
     print(*zipped(arr), sep='\n')

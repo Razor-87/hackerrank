@@ -33,6 +33,5 @@ def the_captains_room(arr: List[str]) -> Set[str]:
 
 if __name__ == '__main__':
     import sys
-    # n, arr = int(sys.stdin.readline()), sys.stdin.readline().split()
     _, arr = sys.stdin.readline(), sys.stdin.readline().split()
     print(*the_captains_room(arr))

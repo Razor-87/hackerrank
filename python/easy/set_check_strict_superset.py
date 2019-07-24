@@ -15,5 +15,5 @@ def check_strict_superset(raw_str: str, raw_arr: List[str]) -> bool:
 
 if __name__ == '__main__':
     import sys
-    raw_str, raw_arr = sys.stdin.readline(), sys.stdin.readlines()[1:]
+    raw_str, *raw_arr = sys.stdin.readlines()
     print(check_strict_superset(raw_str, raw_arr))

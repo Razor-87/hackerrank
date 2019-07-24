@@ -4,7 +4,8 @@ from typing import Dict, List
 
 def nested_lists(arr: List[str]) -> List[str]:
     """
-    >>> nested_lists(['Harry', '37.21', 'Berry', '37.21', 'Tina', '37.2', 'Akriti', '41', 'Harsh', '39'])
+    >>> nested_lists(['Harry', '37.21', 'Berry', '37.21', #doctest: +ELLIPSIS
+    ... 'Tina', '37.2','Akriti', '41', 'Harsh', '39'])
     ['Berry', 'Harry']
     >>> nested_lists(['Test1', '52', 'Test2', '53', 'Test3', '53'])
     ['Test2', 'Test3']
@@ -21,6 +22,5 @@ def nested_lists(arr: List[str]) -> List[str]:
 
 
 if __name__ == '__main__':
-    import sys
-    _, *arr = sys.stdin.read().split()
+    _, *arr = input().split()
     print(*nested_lists(arr), sep="\n")

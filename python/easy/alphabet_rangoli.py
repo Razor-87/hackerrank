@@ -4,8 +4,10 @@ from typing import List
 
 def alphabet_rangoli(size: int) -> List[str]:
     """
-    >>> alphabet_rangoli(5)
-    ['--------e--------', '------e-d-e------', '----e-d-c-d-e----', '--e-d-c-b-c-d-e--', 'e-d-c-b-a-b-c-d-e', '--e-d-c-b-c-d-e--', '----e-d-c-d-e----', '------e-d-e------', '--------e--------']
+    >>> alphabet_rangoli(5) #doctest: +NORMALIZE_WHITESPACE
+    ['--------e--------', '------e-d-e------', '----e-d-c-d-e----',
+     '--e-d-c-b-c-d-e--', 'e-d-c-b-a-b-c-d-e', '--e-d-c-b-c-d-e--',
+     '----e-d-c-d-e----', '------e-d-e------', '--------e--------']
     """
     from string import ascii_lowercase
     alpha = list(ascii_lowercase)

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from typing import Iterable
+from typing import Iterable, Optional
 
 
-def sum_numbers(numbers: Iterable[int] = None) -> int:
+def sum_numbers(numbers: Optional[Iterable[int]] = None) -> int:
     """
     >>> sum_numbers()
     5050

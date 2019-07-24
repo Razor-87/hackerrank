@@ -14,6 +14,5 @@ def calendar_module(raw_str: str) -> str:
 
 
 if __name__ == '__main__':
-    import sys
-    raw_str = sys.stdin.readline()
+    raw_str = input()
     print(calendar_module(raw_str))

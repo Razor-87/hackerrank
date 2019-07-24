@@ -13,6 +13,5 @@ def tuples_hash(t: Tuple[int, ...]) -> int:
 if __name__ == '__main__':
     import sys
     _, integer_list = (sys.stdin.readline(),
-                       tuple(map(int,
-                                 sys.stdin.readline().split())))
+                       tuple(map(int, sys.stdin.readline().split())))
     print(tuples_hash(integer_list))

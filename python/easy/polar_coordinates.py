@@ -14,6 +14,5 @@ def polar_coordinates(raw_str: str) -> Tuple[str, ...]:
 
 
 if __name__ == '__main__':
-    import sys
-    raw_str = sys.stdin.readline()
+    raw_str = input()
     print(*polar_coordinates(raw_str), sep='\n')

@@ -6,8 +6,9 @@ def itertools_combinations(string: str, n: int) -> List[str]:
     """
     >>> itertools_combinations('HACK', 2)
     ['A', 'C', 'H', 'K', 'AC', 'AH', 'AK', 'CH', 'CK', 'HK']
-    >>> itertools_combinations('ABCD', 3)
-    ['A', 'B', 'C', 'D', 'AB', 'AC', 'AD', 'BC', 'BD', 'CD', 'ABC', 'ABD', 'ACD', 'BCD']
+    >>> itertools_combinations('ABCD', 3) #doctest: +NORMALIZE_WHITESPACE
+    ['A', 'B', 'C', 'D', 'AB', 'AC', 'AD', 'BC',
+     'BD', 'CD', 'ABC', 'ABD', 'ACD', 'BCD']
     """
     import itertools
     rang = range(1, n+1)

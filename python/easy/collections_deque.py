@@ -19,7 +19,6 @@ def collections_deque(raw_commands: Tuple[List[str], ...]) -> Deque[List[str]]:
 
 if __name__ == '__main__':
     import sys
-    raw_commands = tuple(
-        map(str.split, map(str.strip,
-                           sys.stdin.readlines()[1:])))
+    raw_commands = tuple(map(str.split,
+                         map(str.strip, sys.stdin.readlines()[1:])))
     print(*collections_deque(raw_commands))
