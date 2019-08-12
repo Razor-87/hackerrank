@@ -14,44 +14,6 @@ print(eval(" ".join(ex)) == y)
 
 
 
-# Designer Door Mat
-n, m = map(int, input().split())
-pattern = [('.|.'*(2*i + 1)).center(m, '-') for i in range(n//2)]
-print('\n'.join(pattern + ['WELCOME'.center(m, '-')] + pattern[::-1]))
-
-
-# String Formatting
-def print_formatted(number):
-    w = len("{0:b}".format(number))
-    for n in range(1, number+1):
-        print("{0:{w}n} {0:{w}o} {0:{w}X} {0:{w}b}".format(n, w=w))
-
-if __name__ == '__main__':
-    n = int(input())
-    print_formatted(n)
-
-
-# Capitalize!
-def solve(string):
-    return " ".join([s.capitalize() for s in string.split(" ")])
-
-if __name__ == '__main__':
-    s = input()
-    result = solve(s)
-    print(result)
-
-
-# Exceptions
-n = int(input())
-for _ in range(n):
-    a, b = input().split()
-    try:
-        print(int(a) // int(b))
-    except ValueError as err:
-        print('Error Code:', err)
-    except ZeroDivisionError:
-        print('Error Code: integer division or modulo by zero')
-
 
 # Set .add()
 import sys
