@@ -6,6 +6,8 @@ def say_hello_world(phrase: Optional[str] = 'Hello, World!') -> None:
     """
     >>> say_hello_world()
     Hello, World!
+    >>> say_hello_world('Hello!')
+    Hello!
     """
     print(phrase)
 

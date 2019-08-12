@@ -5,7 +5,6 @@
 # Python Evaluation
 eval(input())
 
-
 # Input()
 import sys
 x, y, *ex = sys.stdin.read().split()
@@ -13,86 +12,6 @@ x, y = int(x), int(y)
 print(eval(" ".join(ex)) == y)
 
 
-# String Split and Join
-def split_and_join(line):
-    return "-".join(line.split())
-
-if __name__ == '__main__':
-    line = input()
-    result = split_and_join(line)
-    print(result)
-
-
-# What's Your Name?
-def print_full_name(a, b):
-    print("Hello {a} {b}! You just delved into python.".format(a=a, b=b))
-
-if __name__ == '__main__':
-    first_name = input()
-    last_name = input()
-    print_full_name(first_name, last_name)
-
-
-# Mutations
-def mutate_string(string, position, character):
-    lst = list(string)
-    lst[position] = character
-    string = ''.join(lst)
-    return string
-
-if __name__ == '__main__':
-    s = input()
-    i, c = input().split()
-    s_new = mutate_string(s, int(i), c)
-    print(s_new)
-
-
-# Find a string
-def count_substring(string, sub_string):
-    return sum(sub == sub_string for sub in (string[i:i+len(sub_string)]
-               for i in range(len(string))))
-
-if __name__ == '__main__':
-    string = input().strip()
-    sub_string = input().strip()
-    count = count_substring(string, sub_string)
-    print(count)
-
-
-# String Validators
-string = input()
-print(any(s.isalnum() for s in string),
-      any(s.isalpha() for s in string),
-      any(s.isdigit() for s in string),
-      any(s.islower() for s in string),
-      any(s.isupper() for s in string),
-      sep='\n')
-
-
-# Text Alignment
-thickness = int(input())  # This must be an odd number
-c = 'H'
-for i in range(thickness):  # Top Cone
-    print((c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1))
-for _ in range(thickness+1):  # Top Pillars
-    print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))
-for _ in range((thickness+1)//2):  # Middle Belt
-    print((c*thickness*5).center(thickness*6))
-for _ in range(thickness+1):  # Bottom Pillars
-    print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))
-for i in range(thickness):  # Bottom Cone
-    print(((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
-
-
-# Text Wrap
-def wrap(string, max_width):
-    import textwrap
-    return textwrap.fill(string, width=max_width)
-
-if __name__ == '__main__':
-    string, max_width = input(), int(input())
-    result = wrap(string, max_width)
-    print(result)
 
 
 # Designer Door Mat

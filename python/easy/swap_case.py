@@ -7,8 +7,3 @@ def swap_case(string: str) -> str:
     'hACKERrANK.COM PRESENTS "pYTHONIST 2".'
     """
     return string.swapcase()
-
-
-if __name__ == '__main__':
-    string = input()
-    print(swap_case(string))
