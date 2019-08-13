@@ -2,55 +2,6 @@
 # type: ignore
 
 
-# Python Evaluation
-eval(input())
-
-# Input()
-import sys
-x, y, *ex = sys.stdin.read().split()
-x, y = int(x), int(y)
-print(eval(" ".join(ex)) == y)
-
-
-
-
-
-# Set .add()
-import sys
-_, *arr = map(str.strip, sys.stdin.readlines())
-print(len(set(arr)))
-
-
-# Mod Divmod
-x, y = int(input()), int(input())
-divmod_xy = divmod(x, y)
-print(*divmod_xy, divmod_xy, sep='\n')
-
-
-# Power - Mod Power
-a, b, m = int(input()), int(input()), int(input())
-print(pow(a, b), pow(a, b, m), sep='\n')
-
-
-# Integers Come In All Sizes
-import sys
-nums = tuple(map(int, sys.stdin.readlines()))
-sum_pows = sum(nums[i]**nums[i+1] for i in range(len(nums))[::2])
-print(sum_pows)
-
-
-# Detect Floating Point Number
-n = int(input())
-for _ in range(n):
-    # import re
-    # pattern = re.compile('^[-+]?[0-9]*\.[0-9]+$')
-    # print(bool(pattern.match(input())))
-    try:
-        print(bool(float(input())))
-    except ValueError:
-        print(False)
-
-
 # Re.split()
 regex_pattern = r"[,.]"
 import re

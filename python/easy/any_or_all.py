@@ -15,6 +15,5 @@ def any_or_all(lst: List[str]) -> bool:
 
 
 if __name__ == '__main__':
-    import sys
-    _, *lst = sys.stdin.read().split()
+    _, lst = input(), input().split()
     print(any_or_all(lst))
