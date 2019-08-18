@@ -16,7 +16,8 @@ def concatenate(a: List[List[str]], b: List[List[str]]) -> numpy.ndarray:
            [3, 4]])
     """
     arr_a, arr_b = numpy.array(a, int), numpy.array(b, int)
-    return numpy.concatenate((arr_a, arr_b), axis=0)
+    concatenate = numpy.concatenate((arr_a, arr_b), axis=0)
+    return concatenate
 
 
 if __name__ == '__main__':

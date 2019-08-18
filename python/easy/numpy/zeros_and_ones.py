@@ -33,5 +33,5 @@ def zeros_and_ones(shapes: Tuple[int, ...]) -> Tuple[numpy.ndarray, ...]:
 
 
 if __name__ == '__main__':
-    shapes = tuple(map(int, input().split()))
+    shapes = (*map(int, input().split()),)
     print('{}\n{}'.format(*zeros_and_ones(shapes)))

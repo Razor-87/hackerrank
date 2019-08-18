@@ -11,7 +11,8 @@ def shape_and_reshape(lst: List[str]) -> numpy.ndarray:
            [7, 8, 9]])
     """
     arr = numpy.array(lst, int)
-    return numpy.reshape(arr, (3, 3))
+    arr_reshaped = numpy.reshape(arr, (3, 3))
+    return arr_reshaped
 
 
 if __name__ == '__main__':
