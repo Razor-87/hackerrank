@@ -9,20 +9,20 @@ def array_mathematics(a: List[List[str]],
     >>> array_mathematics([['1', '2', '3', '4']],
     ... [['5', '6', '7', '8']]) #doctest: +NORMALIZE_WHITESPACE
     (array([[ 6,  8, 10, 12]]), array([[-4, -4, -4, -4]]),
-     array([[ 5, 12, 21, 32]]), array([[0, 0, 0, 0]], dtype=int32),
-     array([[1, 2, 3, 4]], dtype=int32),
-     array([[    1,    64,  2187, 65536]], dtype=int32))
+     array([[ 5, 12, 21, 32]]), array([[0, 0, 0, 0]]),
+     array([[1, 2, 3, 4]]),
+     array([[    1,    64,  2187, 65536]]))
     """
     arr_a, arr_b = numpy.array(a, int), numpy.array(b, int)
     dict_mathematics = {
         'add': numpy.add(arr_a, arr_b),
         'subtract': numpy.subtract(arr_a, arr_b),
         'multiply': numpy.multiply(arr_a, arr_b),
-        'floor_divide': numpy.floor_divide(arr_a, arr_b),
-        'mod': numpy.mod(arr_a, arr_b),
-        'power': numpy.power(arr_a, arr_b)
+        'floor_divide': numpy.floor_divide(arr_a, arr_b, dtype=int),
+        'mod': numpy.mod(arr_a, arr_b, dtype=int),
+        'power': numpy.power(arr_a, arr_b, dtype=int)
     }
-    return (*dict_mathematics.values(),)
+    return (*dict_mathematics.values(), )
 
 
 if __name__ == '__main__':
