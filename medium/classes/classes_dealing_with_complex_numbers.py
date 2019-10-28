@@ -14,7 +14,7 @@ class Complex:
     7.81+0.00i
     """
 
-    def __init__(self, real: int, imag: int) -> None:
+    def __init__(self, real: float, imag: float) -> None:
         self.real = real
         self.imag = imag
 
