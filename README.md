@@ -8,3 +8,7 @@
     - *Medium* - 22/22
     - *Hard* - 3/3
     - *Total* - 115/115
+
+- **The HackerRank Interview Preparation Kit**
+	- *Warm-up Challenges* - 4/4
+    - *Total* - 4/69 - 6%
