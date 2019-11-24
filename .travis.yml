@@ -1,9 +1,10 @@
 dist: xenial  # required for Python >= 3.7
 language: python
-python: 3.7
+python: 3.7.5
+cache: pip
 
-install: pip install pytest-mypy codecov pytest-cov
+install: pip install pytest>=5.3.0 pytest-mypy pytest-xdist pytest-cov codecov
 
-script: pytest --mypy-ignore-missing-imports --doctest-modules --cov-report term --cov=.
+script: pytest -n 2 --mypy-ignore-missing-imports --doctest-modules --cov=.
 
 after_success: codecov
