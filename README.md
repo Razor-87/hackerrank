@@ -10,6 +10,6 @@
     - *Total* - 115/115
 
 - **The HackerRank Interview Preparation Kit**
-	- *Arrays* - 2/5
-	- *Warm-up Challenges* - 4/4
-    - *Total* - 6/69 - 9%
+    - *Arrays* - 5/5
+    - *Warm-up Challenges* - 4/4
+    - *Total* - 9/69 - 13%
