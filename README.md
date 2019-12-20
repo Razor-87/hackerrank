@@ -11,5 +11,6 @@
 
 - **The HackerRank Interview Preparation Kit**
     - *Arrays* - 5/5
+    - *Dictionaries and Hashmaps* - 2/5
     - *Warm-up Challenges* - 4/4
-    - *Total* - 9/69 - 13%
+    - *Total* - 11/69 - 15%
