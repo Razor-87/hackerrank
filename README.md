@@ -14,3 +14,9 @@
     - *Dictionaries and Hashmaps* - 2/5
     - *Warm-up Challenges* - 4/4
     - *Total* - 11/69 - 15%
+
+ - **Algorithms** 
+    - *Easy* - 5/119 - 4%
+    - *Medium* - 0/139 - 0%
+    - *Hard* - 0/184 - 0%
+    - *Total* - 5/442 - 1%
