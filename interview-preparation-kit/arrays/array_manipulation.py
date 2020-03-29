@@ -2,7 +2,7 @@
 from typing import List
 
 
-def array_manipulation(n: int, queries: List[int]) -> int:
+def array_manipulation(n: int, queries: List[List[int]]) -> int:
     """
     >>> array_manipulation(5, [[1, 2, 100], [2, 5, 100], [3, 4, 100]])
     200
