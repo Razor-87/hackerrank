@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from typing import Tuple
+from typing import List, Tuple
 
 
-def compare_triplets(a: Tuple[int, ...], b: Tuple[int, ...]) -> Tuple[int, ...]:
+def compare_triplets(a: List[int], b: List[int]) -> Tuple[int, ...]:
     """
     >>> compare_triplets((5, 6, 7), (3, 6, 10))
     (1, 1)
@@ -19,6 +19,5 @@ def compare_triplets(a: Tuple[int, ...], b: Tuple[int, ...]) -> Tuple[int, ...]:
 
 
 if __name__ == '__main__':
-    import sys
-    a, b = (tuple(map(int, el.strip().split())) for el in sys.stdin.readlines())
+    a, b = ([*map(int, input().strip().split())] for _ in range(2))
     print(*compare_triplets(a, b))

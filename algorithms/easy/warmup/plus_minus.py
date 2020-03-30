@@ -7,7 +7,6 @@ def plus_minus(arr: List[int]) -> Tuple[float, ...]:
     >>> plus_minus([0, 0, -1, 1, 1])
     (0.4, 0.2, 0.4)
     """
-    len_arr = len(arr)
     # positive, negative, zeros = 0, 0, 0
     # for i in arr:
     #     if i > 0:
@@ -16,15 +15,14 @@ def plus_minus(arr: List[int]) -> Tuple[float, ...]:
     #         negative += 1
     #     else:
     #         zeros += 1
-    positive = len([x for x in arr if x > 0])
-    negative = len([x for x in arr if x < 0])
-    zeros = len([x for x in arr if x == 0])
-    return (positive / len_arr,
-            negative / len_arr,
-            zeros / len_arr)
+    len_arr = len(arr)
+    positive = sum(x > 0 for x in arr)
+    negative = sum(x < 0 for x in arr)
+    zeros = len_arr - (positive + negative)
+    ret = (positive / len_arr, negative / len_arr, zeros / len_arr)
+    return ret
 
 
 if __name__ == '__main__':
-    import sys
-    _, *arr = map(int, sys.stdin.read().split())
+    _, arr = input(), [*map(int, input().split())]
     print(*plus_minus(arr), sep='\n')
