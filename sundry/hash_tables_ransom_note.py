@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# https://www.hackerrank.com/challenges/ctci-ransom-note/problem
 from typing import List
 
 
