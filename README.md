@@ -4,10 +4,10 @@
 [![codecov](https://codecov.io/gh/Razor-87/hackerrank/branch/master/graph/badge.svg)](https://codecov.io/gh/Razor-87/hackerrank)
 
 - **Algorithms** 
-   - *Easy* - 15/119 - 12%
+   - *Easy* - 20/119 - 16%
    - *Medium* - 1/139 - 1%
    - *Hard* - 0/184 - 0%
-   - *Total* - 16/442 - 3%
+   - *Total* - 21/442 - 4%
 
 - **Data Structures** 
    - *Easy* - 2/30 - 6%
